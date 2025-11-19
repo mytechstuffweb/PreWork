@@ -1,19 +1,33 @@
-# React + Vite
+- Application repository - https://github.com/mytechstuffweb/PreWork
+- Application is built using react 19.2.0 and vite 7.2.2
+- Application is deployed using GitHub Pages
+- to run application locally run following commands:
+    - npm install
+    - npm run dev
+- application will start on vite default port 5173
+- if that port is already in use, vite will try next up port number
+- port number finally assigned to the app will be shown at the end of "npm run dev" run
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# PreWork
+Main functionality:
+- Application is using Cats API
+- On load, there should be:
+    - header
+    - "Select a breed" button
+    - "Images per Page" button - select between 3, 6, and 9; default is 3
+    - "Color scheme toggle" button - Dark / Light
+    - 3 random cats pictured should be loaded 
+    - pictures of the cats with breed should have breed name displayed under picture
+    - "Select Images" button
+- Click "Select a breed button":
+    - 3 images of the selected breed cats should be reloaded
+    - Description of the breed should be displayed above the pictures
+    - logo-links to Wikipedia, vetStreet, and The Cats Fanciers' association
+      should be displayed when available; logo-links will launch a page from related website 
+- Click "Images per Page" button:
+    - page will display selected number of images, random or images for the selected breed
+    - if selected 6 or 9 images - additional "Select Images" button 
+      will be displayed under pictures
+- Click "Color scheme toggle" button:
+    - page will switch to selected color scheme
+- Click "Select Images" button:
+    - appropriate number of new images will be displayed
